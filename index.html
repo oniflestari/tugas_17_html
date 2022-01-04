@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tugas 17</title>
+	<style type="text/css">
+		input:focus {
+			outline: none;
+			border: 2px solid skyblue;
+		}
+	</style>
+</head>
+<body>
+	<h1>Formulir Pendaftaran</h1>
+	<form>
+		<!-- 1. Cari Data :  Input Element Type Search -->
+		<p>Cari Data : <input type="search" name="search"></p>		
+		<p>Nama Lengkap : <input type="text" name="nama"></p>
+
+		<!-- 2. Alamat Website : Input Element Type URL -->
+		<p>Alamat Website : <input type="url" name="alamat"></p>
+
+		<!-- 3. Umur : Input Element Type Number dengan minimal umur 10 dan maksimal 35 -->
+		<p>Umur : 
+			<input
+				type="number"
+				name="umur"
+				min="10"
+				max="35"
+			>
+		</p>
+
+		<!-- 4. No Hp : Input Element Type Tel -->
+		<p>Nomor HP : <input type="tel"	name="tel"></p>
+
+		<!-- 5. Pemahaman Materi : Input Element Type Range -->
+		<p>Seberapa mengerti anda tentang materi ini? <input type="range" name="range"></p>
+
+		<input type="submit" name="submit" value="Submit">
+	</form>
+</body>
+</html>
